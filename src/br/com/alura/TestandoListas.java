@@ -1,6 +1,7 @@
 package br.com.alura;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestandoListas {
     public static void main(String[] args) {
@@ -37,6 +38,13 @@ public class TestandoListas {
             System.out.println("percorrendo: " + aula);
             System.out.println("aula " + aula);
         });
+
+        aulas.add("Aumentando nosso conhecimento");
+        System.out.println(aulas);
+        Collections.sort(aulas);
+
+        System.out.println("Depois de ordenado");
+        System.out.println(aulas);
 
 
     }
