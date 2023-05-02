@@ -1,5 +1,6 @@
 package br.com.alura;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -34,12 +35,12 @@ public class TestaAlunos {
         System.out.println(alunos);
 
 
-        Collection<Integer> numeros = new HashSet<Integer>();
+        Collection<Integer> numeros = new ArrayList<Integer>();
         //Collection<Integer> numeros = new ArrayList<Integer>();
 
         long inicio = System.currentTimeMillis();
 
-        for (int i = 1; i <= 50000; i++) {
+        for (int i = 1; i <= 100000; i++) {
             numeros.add(i);
         }
 
